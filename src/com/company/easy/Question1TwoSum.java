@@ -31,6 +31,7 @@ public class Question1TwoSum {
         System.out.println("enter target value");
         int target = s.nextInt();
         s.close();
-        twoSum(arr,target);
+        int result[] = twoSum(arr,target);
+        System.out.println(result[1]);
     }
 }
