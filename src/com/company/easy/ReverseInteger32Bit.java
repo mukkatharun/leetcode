@@ -12,13 +12,12 @@ public class ReverseInteger32Bit {
 
             if((b-num%10)/10 != reversedInteger) return 0;
             else reversedInteger = b;
-            num = num/10;
 
+            num = num/10;
         }
         return reversedInteger;
     }
     public static void main(String[] args) {
-        // write your code here
 
         System.out.println("Reverse an Interger 32 Bit");
         Scanner scan = new Scanner(System.in);
