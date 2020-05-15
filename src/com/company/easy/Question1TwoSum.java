@@ -25,8 +25,8 @@ public class Question1TwoSum {
         int arr[]=new int[n];
         System.out.println("enter elements");
 
-        for(int i=0;i<n;i++){//for reading array
-            arr[i]=s.nextInt();
+        for(int i=0;i<n;i++){ 
+            arr[i]=s.nextInt();  //for reading array
         }
         System.out.println("enter target value");
         int target = s.nextInt();
