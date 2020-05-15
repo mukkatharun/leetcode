@@ -32,6 +32,6 @@ public class Question1TwoSum {
         int target = s.nextInt();
         s.close();
         int result[] = twoSum(arr,target);
-        System.out.println(result[1]);
+        System.out.println(result[0] + ", 5" + result[1]);
     }
 }
