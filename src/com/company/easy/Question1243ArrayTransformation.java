@@ -5,7 +5,39 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Question1243ArrayTransformation {
+    public static void main(String args[]){
+        int count = 1;
+        int[] arr = {2,1,2,1,1,2,2,1};
+        int[] arr2 = arr.clone();
+        List<Integer> array = new ArrayList<Integer>();
 
+        while(count>0)
+        {
+            for(int i = 1;i < arr.length - 1; i++)
+            {
+                if(arr[i] < arr[i - 1] && arr[i] < arr[i + 1])
+                {
+                    arr2[i] = arr[i] + 1;
+                }
+                else if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
+                {
+                    arr2[i] = arr[i] - 1;
+                }
+                else {
+                    arr2[i] = arr[i];
+                }
+            }
+            if(Arrays.equals(arr, arr2))
+            {
+                count =0;
+            }
+            else count = 1;
+            arr = arr2.clone();
+        }
+        for(int i=0;i<arr.length ;i++) {
+            array.add(arr2[i]);
+            System.out.println(arr2[i]);
+        }
     }
 }
 /*
